@@ -31,9 +31,12 @@ public class DL4JWordEmbedLearner {
 	static float minLearningRate = 1e-2f;
 
 	static int seed = 1000;
-	static LineSentenceIterator iter = new LineSentenceIterator(
-			new File(
-					"test.txt"));
+	
+	File temp = new File("test.txt");
+	if(!temp.exists()) {
+		temp.createNewFile();
+	}
+	static LineSentenceIterator iter = new LineSentenceIterator(temp);
 	static EndingPreProcessor preProcessor = new EndingPreProcessor();
 	static DefaultTokenizerFactory tokenizer = new DefaultTokenizerFactory();
 	static WordVectors wordVectors = new WordVectorsImpl();
