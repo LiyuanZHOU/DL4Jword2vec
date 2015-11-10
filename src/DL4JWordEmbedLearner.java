@@ -21,7 +21,7 @@ public class DL4JWordEmbedLearner {
 	static String embeddingFilePath = "/media/data3tb1/wordEmbedings/word2vec/NegSamp_n10/vectors_w5_v25";
 	static String resultFile = "/media/data3tb2/socialWatchData/wordEmbeddings/model/reddit-crawled-drugs-subrredits_plainText.txt";
 
-	static int wordDim = 25;
+	static int wordDim = 200;
 	static int contextSize = 5;
 	static int numNegSamples = 5;
 	static int batchSize = 1000;
