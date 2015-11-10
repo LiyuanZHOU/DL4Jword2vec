@@ -120,6 +120,9 @@ public class DL4JWordEmbedLearner {
 			resultFile = args[2];
 			
 		}
+		System.out.println(corpusDir);
+		System.out.println(embeddingFilePath);
+		System.out.println(resultFile);
 		
 		loadData();
 		tokenizor();
