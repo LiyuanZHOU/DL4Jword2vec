@@ -113,7 +113,14 @@ public class DL4JWordEmbedLearner {
 	}
 
 	public static void main(String[] args) throws IOException {
-
+		
+		if(args.length() >0){
+			corpusDir = args[0];
+			embeddingFilePath = args[1];
+			resultFile = args[2];
+			
+		}
+		
 		loadData();
 		tokenizor();
 		trainModel();
