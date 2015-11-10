@@ -33,7 +33,7 @@ public class DL4JWordEmbedLearner {
 	static int seed = 1000;
 	static LineSentenceIterator iter = new LineSentenceIterator(
 			new File(
-					"/media/data3tb2/socialWatchData/wordEmbeddings/trainData/test.txt"));
+					"test.txt"));
 	static EndingPreProcessor preProcessor = new EndingPreProcessor();
 	static DefaultTokenizerFactory tokenizer = new DefaultTokenizerFactory();
 	static WordVectors wordVectors = new WordVectorsImpl();
